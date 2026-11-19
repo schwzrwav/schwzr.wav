@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>schwzr.wav // tape_dump</title>
+  <title>schwzr.wav — Audio Archive &amp; Studio Dubs (Zürich)</title>
   <style>
     :root {
-      --bg: #0c0c0b;
-      --panel: #151412;
-      --panel-dark: #0e0d0c;
-      --border: #2c2925;
-      --border-light: #443f38;
-      --fg: #dcd6cc;
-      --dim: #7d766c;
-      --amber: #e68a2e;
-      --amber-glow: rgba(230, 138, 46, 0.25);
-      --red: #d93829;
-      --sticker: #d8cfa8;
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --surface-hover: #171717;
+      --border: #222222;
+      --border-strong: #333333;
+      --text-main: #ededed;
+      --text-muted: #7a7a7a;
+      --text-dim: #4d4d4d;
+      --accent: #e53935;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
     }
 
     * {
@@ -27,606 +27,610 @@
 
     body {
       background-color: var(--bg);
-      color: var(--fg);
-      font-family: "Courier New", Courier, monospace;
-      font-size: 13px;
-      line-height: 1.4;
-      padding: 20px;
-      max-width: 1060px;
-      margin: 0 auto;
+      color: var(--text-main);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 90px;
     }
 
-    /* Top Header */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Navigation / Header */
     header {
       border-bottom: 1px solid var(--border);
-      padding-bottom: 12px;
-      margin-bottom: 16px;
+      padding: 28px 0 24px;
+      margin-bottom: 32px;
+    }
+
+    .header-top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    h1 {
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-      color: #f4efe6;
-    }
-
-    .plus-box {
-      color: var(--red);
-    }
-
-    .sys-status {
-      font-size: 11px;
-      color: var(--dim);
-      letter-spacing: 0.5px;
-    }
-
-    /* Warning & Random Trash Banner */
-    .warning-banner {
-      background: linear-gradient(180deg, #1b1916 0%, #12110f 100%);
-      border: 1px solid var(--border-light);
-      padding: 14px;
-      margin-bottom: 20px;
-      text-align: center;
-      box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
-    }
-
-    .warning-text {
-      font-size: 12px;
-      color: #b5ada0;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
-
-    .random-btn {
-      background: #1d1a16;
-      color: var(--amber);
-      border: 1px solid var(--amber);
-      font-family: inherit;
-      font-size: 14px;
-      font-weight: bold;
-      padding: 6px 18px;
-      cursor: pointer;
-      letter-spacing: 1px;
-      box-shadow: 0 0 10px var(--amber-glow);
-      transition: all 0.15s;
-    }
-
-    .random-btn:hover {
-      background: var(--amber);
-      color: #0c0c0b;
-    }
-
-    /* Main Grid Layout */
-    .workspace {
-      display: grid;
-      grid-template-columns: 1fr 270px;
-      gap: 20px;
-      align-items: start;
-    }
-
-    @media (max-width: 860px) {
-      .workspace {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Tape Deck Chassis */
-    .deck-chassis {
-      background: var(--panel);
-      border: 2px solid var(--border-light);
-      border-radius: 4px;
-      padding: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-    }
-
-    .deck-top {
-      display: grid;
-      grid-template-columns: 270px 1fr;
       gap: 16px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
-    @media (max-width: 640px) {
-      .deck-top {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Main Active Cassette Well */
-    .tape-well {
-      background: #090908;
-      border: 2px solid #26231f;
-      border-radius: 4px;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-    }
-
-    .cassette-body {
-      background: #22201d;
-      border: 1px solid #3d3832;
-      border-radius: 6px;
-      padding: 10px;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
-    }
-
-    .cassette-label {
-      background: var(--sticker);
-      color: #141311;
-      padding: 5px 8px;
-      border-radius: 2px;
-      font-size: 11px;
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #b5ab82;
-    }
-
-    .reels-window {
-      background: #11100f;
-      border: 1px solid #332f2a;
-      border-radius: 20px;
-      height: 54px;
+    .brand {
+      font-family: var(--mono);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #ffffff;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      padding: 0 14px;
-      position: relative;
-    }
-
-    .reel {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      border: 3px dashed #dcd6cc;
-      background: #1c1a17;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .reel::after {
-      content: "";
-      width: 10px;
-      height: 10px;
-      background: #090908;
-      border-radius: 50%;
-    }
-
-    .spinning .reel {
-      animation: spin 2.2s linear infinite;
-    }
-
-    @keyframes spin {
-      100% { transform: rotate(360deg); }
-    }
-
-    .tape-bridge {
-      width: 40px;
-      height: 14px;
-      border-top: 1px solid #443f38;
-      border-bottom: 1px solid #443f38;
-      background: repeating-linear-gradient(90deg, #2a2622, #2a2622 2px, transparent 2px, transparent 5px);
-    }
-
-    /* Tape Shelf (4 Mini Tapes) */
-    .tape-shelf {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
 
-    @media (max-width: 500px) {
-      .tape-shelf {
-        grid-template-columns: 1fr;
-      }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
     }
 
-    .mini-tape-slot {
-      background: var(--panel-dark);
-      border: 1px solid var(--border);
-      padding: 8px;
-      border-radius: 3px;
+    .meta-tags {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      transition: border-color 0.15s;
-    }
-
-    .mini-tape-slot.active-slot {
-      border-color: var(--amber);
-      background: #191612;
-    }
-
-    .mini-cassette {
-      flex: 1;
-      background: #1e1c19;
-      border: 1px solid #35312b;
-      border-radius: 3px;
-      padding: 5px 6px;
-      cursor: pointer;
-    }
-
-    .mini-label {
-      background: var(--sticker);
-      color: #141311;
-      font-size: 9px;
-      font-weight: bold;
-      padding: 2px 4px;
-      margin-bottom: 4px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 145px;
-    }
-
-    .mini-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 9px;
-      color: var(--dim);
-    }
-
-    .slot-controls {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .slot-btn {
-      background: #1c1a17;
-      color: var(--fg);
-      border: 1px solid #38332c;
-      font-family: inherit;
-      font-size: 9px;
-      padding: 3px 5px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .slot-btn:hover {
-      border-color: var(--amber);
-      color: var(--amber);
-    }
-
-    /* Deck Bottom Controls & Meters */
-    .deck-bottom {
-      border-top: 1px solid var(--border);
-      padding-top: 12px;
-      display: flex;
+      gap: 16px;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
     }
 
-    .counter-box {
-      background: #070706;
-      border: 1px solid #2e2a24;
-      padding: 6px 12px;
-      font-size: 16px;
-      font-weight: bold;
-      color: var(--amber);
-      letter-spacing: 2px;
-      text-shadow: 0 0 8px var(--amber-glow);
+    .bio {
+      color: var(--text-muted);
+      max-width: 640px;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-    .transport-btns {
+    .bio span {
+      color: var(--text-main);
+    }
+
+    /* Control Bar */
+    .toolbar {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-strong);
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
       gap: 6px;
     }
 
-    .t-btn {
-      background: #1d1b18;
-      color: var(--fg);
-      border: 1px solid #3e3932;
-      font-family: inherit;
+    .btn:hover {
+      background: #ffffff;
+      color: #0a0a0a;
+      border-color: #ffffff;
+    }
+
+    .btn.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    /* Catalog Table */
+    .catalog {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 48px;
+    }
+
+    .catalog th {
+      font-family: var(--mono);
       font-size: 11px;
-      padding: 7px 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-dim);
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .catalog td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    .track-row {
+      transition: background-color 0.12s ease;
+    }
+
+    .track-row:hover {
+      background-color: var(--surface-hover);
+    }
+
+    .track-row.playing {
+      background-color: var(--surface);
+    }
+
+    .cat-id {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      width: 90px;
+    }
+
+    .track-title {
+      font-weight: 500;
+      color: #ffffff;
       cursor: pointer;
+      display: block;
+      margin-bottom: 2px;
     }
 
-    .t-btn:hover {
-      background: #2b2722;
-      border-color: var(--amber);
+    .track-title:hover {
+      text-decoration: underline;
     }
 
-    .t-btn.playing-btn {
-      background: var(--amber);
-      color: #0c0c0b;
-      font-weight: bold;
-      border-color: var(--amber);
+    .track-sub {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
     }
 
-    .waveform-box {
-      flex: 1;
-      min-width: 180px;
-      background: #090908;
-      border: 1px solid var(--border);
-      padding: 6px 10px;
-      cursor: pointer;
+    .mono-cell {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-muted);
     }
 
-    .wave-info {
+    .row-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    /* Two-Column Info & Log Section */
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 720px) {
+      .bottom-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .hide-sm {
+        display: none;
+      }
+    }
+
+    .info-block h2 {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+
+    .info-list {
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .info-list li {
       display: flex;
       justify-content: space-between;
-      font-size: 10px;
-      color: var(--amber);
-      margin-bottom: 4px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
     }
 
-    .wave-track {
-      height: 10px;
-      background: #191714;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .wave-fill {
-      height: 100%;
-      width: 0%;
-      background: repeating-linear-gradient(90deg, var(--amber), var(--amber) 3px, transparent 3px, transparent 5px);
-    }
-
-    /* Right Sidebar: Sticker + Guestbook */
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .tape-sticker {
-      align-self: center;
-      background: var(--sticker);
-      color: #161512;
-      padding: 8px 14px;
-      font-size: 11px;
-      font-weight: bold;
-      text-align: center;
-      transform: rotate(-2.5deg);
-      box-shadow: 2px 4px 10px rgba(0,0,0,0.6);
-      border-left: 4px solid rgba(255,255,255,0.3);
-      border-right: 4px solid rgba(255,255,255,0.3);
-      letter-spacing: 0.5px;
-    }
-
-    .guestbook-box {
-      background: var(--panel);
-      border: 1px solid var(--border-light);
-      padding: 12px;
-      border-radius: 3px;
-    }
-
-    .gb-header {
-      font-size: 11px;
-      color: var(--dim);
-      margin-bottom: 8px;
-    }
-
-    .gb-input {
-      width: 100%;
-      background: #090908;
-      border: 1px solid var(--border);
-      color: var(--fg);
-      font-family: inherit;
-      font-size: 11px;
-      padding: 6px 8px;
-      margin-bottom: 8px;
-    }
-
-    .gb-input:focus {
-      outline: none;
-      border-color: var(--amber);
-    }
-
-    .gb-submit {
-      width: 100%;
-      background: #1d1a16;
-      color: var(--amber);
-      border: 1px solid #4a3c28;
-      font-family: inherit;
-      font-size: 11px;
-      padding: 5px;
-      cursor: pointer;
-      margin-bottom: 12px;
-    }
-
-    .gb-submit:hover {
-      background: var(--amber);
-      color: #0c0c0b;
-    }
-
-    .gb-entries {
-      list-style: none;
-      font-size: 11px;
-      color: #b5ada0;
-    }
-
-    .gb-entries li {
-      padding: 6px 0;
-      border-top: 1px dashed var(--border);
-    }
-
-    .gb-time {
-      color: var(--amber);
-      margin-right: 4px;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 24px;
-      border-top: 1px solid var(--border);
-      padding-top: 12px;
-      text-align: center;
-      font-size: 11px;
-      color: var(--dim);
-    }
-
-    footer a {
-      color: var(--fg);
+    .info-list li span:last-child,
+    .info-list li a {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-main);
       text-decoration: none;
     }
 
-    footer a:hover {
-      color: var(--amber);
+    .info-list li a:hover {
       text-decoration: underline;
+    }
+
+    /* Studio Notes / Guestbook */
+    .note-form {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .note-input {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-main);
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+
+    .note-input:focus {
+      outline: none;
+      border-color: #ffffff;
+    }
+
+    .notes-feed {
+      list-style: none;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .notes-feed li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      color: #b0b0b0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .note-date {
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+
+    /* Fixed Bottom Audio Player Bar */
+    .player-dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(12, 12, 12, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border-strong);
+      padding: 12px 24px;
+      z-index: 100;
+    }
+
+    .player-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 220px 1fr auto;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 720px) {
+      .player-inner {
+        grid-template-columns: auto 1fr auto;
+      }
+      .player-track-info {
+        display: none;
+      }
+    }
+
+    .player-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .player-track-info {
+      overflow: hidden;
+    }
+
+    .player-title {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .player-meta {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Interactive Waveform Bars */
+    .waveform-wrapper {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      cursor: pointer;
+      padding: 2px 0;
+    }
+
+    .wave-bar {
+      flex: 1;
+      background: #2a2a2a;
+      border-radius: 1px;
+      transition: background-color 0.1s ease;
+    }
+
+    .wave-bar.played {
+      background: #ffffff;
+    }
+
+    .waveform-wrapper:hover .wave-bar:not(.played) {
+      background: #444444;
+    }
+
+    .player-time {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      min-width: 85px;
+      text-align: right;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>SCHWZR.WAV // AUDIO TRASH &amp; DUB ARCHIVE <span class="plus-box">[+]</span></h1>
-    <div class="sys-status">SYS: ONLINE // RATE: 122 BPM // LOC: ZÜRI +41</div>
-  </header>
-
-  <div class="warning-banner">
-    <div class="warning-text">[!] RAW AUDIO STORAGE - UNMASTERED SKETCHES - LISTEN AT OWN RISK</div>
-    <button class="random-btn" onclick="playRandom()">[RANDOM TRASH]</button>
-  </div>
-
-  <div class="workspace">
-    <!-- Tape Deck -->
-    <div class="deck-chassis">
-      <div class="deck-top">
-        <!-- Active Cassette -->
-        <div class="tape-well" id="tape-well">
-          <div class="cassette-body">
-            <div class="cassette-label" id="active-label">01_nebel_ueber_em_see_dub.wav</div>
-            <div class="reels-window">
-              <div class="reel"></div>
-              <div class="tape-bridge"></div>
-              <div class="reel"></div>
-            </div>
-          </div>
-          <div style="display:flex; justify-content:space-between; font-size:10px; color:var(--dim); margin-top:8px;">
-            <span id="deck-status">READY</span>
-            <span id="deck-bpm">122 BPM // CH-ZÜRI</span>
-          </div>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="brand">
+          <span class="status-dot"></span>
+          <span>schwzr.wav</span>
         </div>
-
-        <!-- Tape Shelf -->
-        <div class="tape-shelf" id="tape-shelf"></div>
+        <div class="meta-tags">
+          <span>ZÜRICH, CH (+41)</span>
+          <span>DEEP TECH / DUB / CLUB TOOLS</span>
+          <span>24-BIT UNMASTERED ARCHIVE</span>
+        </div>
       </div>
+      <p class="bio">
+        <span>min aktive kanal für tracks, edits und ideä.</span> Direct studio bounce archive — raw grooves, stripped-down club tools, and unmastered sketches available for direct download.
+      </p>
+    </header>
 
-      <!-- Bottom Transport & Waveform -->
-      <div class="deck-bottom">
-        <div class="counter-box" id="counter">00:00</div>
-        <div class="transport-btns">
-          <button class="t-btn" onclick="prevTrack()">&#9664;&#9664; REW</button>
-          <button class="t-btn" id="play-btn" onclick="togglePlay()">&#9654; PLAY</button>
-          <button class="t-btn" onclick="stopTrack()">&#9632; STOP</button>
-          <button class="t-btn" onclick="nextTrack()">FF &#9654;&#9654;</button>
-          <a id="main-dl" href="#" onclick="downloadCurrent(event)"><button type="button" class="t-btn">&#8595; DL WAV</button></a>
-        </div>
-        <div class="waveform-box" onclick="seek(event)">
-          <div class="wave-info">
-            <span id="wave-title">TRACK 01</span>
-            <span id="wave-time">00:00 / 03:00</span>
-          </div>
-          <div class="wave-track">
-            <div class="wave-fill" id="wave-fill"></div>
-          </div>
-        </div>
+    <div class="toolbar">
+      <div class="section-label">Catalog // 05 Releases</div>
+      <div class="toolbar-actions">
+        <button class="btn" onclick="playRandom()">Shuffle / Random</button>
       </div>
     </div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="tape-sticker">EIGENTLI NU<br>REINE SCHROTT</div>
+    <table class="catalog">
+      <thead>
+        <tr>
+          <th class="hide-sm">Cat.</th>
+          <th>Track / Notes</th>
+          <th class="hide-sm">BPM</th>
+          <th class="hide-sm">Key</th>
+          <th class="hide-sm">Format</th>
+          <th style="text-align: right;">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="catalog-body"></tbody>
+    </table>
 
-      <div class="guestbook-box">
-        <div class="gb-header">// local_guestbook.txt</div>
-        <form onsubmit="addComment(event)">
-          <input type="text" class="gb-input" id="gb-input" maxlength="50" placeholder="[ type message... ]" required />
-          <button type="submit" class="gb-submit">[PUSH TO POST]</button>
-        </form>
-        <ul class="gb-entries" id="gb-list">
-          <li><span class="gb-time">04:12 &rarr;</span> tüüf &amp; sacht, genau richtig för chreis 4</li>
-          <li><span class="gb-time">02:47 &rarr;</span> sub bass hit hard on track 02</li>
+    <div class="bottom-grid">
+      <div class="info-block">
+        <h2>Channels &amp; Contact</h2>
+        <ul class="info-list">
+          <li>
+            <span>Main Audio Stream</span>
+            <a href="https://soundcloud.com" target="_blank">soundcloud.com/schwzr.wav &nearr;</a>
+          </li>
+          <li>
+            <span>Secondary / Archive</span>
+            <a href="https://soundcloud.com" target="_blank">soundcloud.com/schwzr &nearr;</a>
+          </li>
+          <li>
+            <span>Location</span>
+            <span>Zürich, Switzerland</span>
+          </li>
+          <li>
+            <span>Usage / Licensing</span>
+            <span>Free for DJ &amp; club play</span>
+          </li>
         </ul>
       </div>
-    </aside>
+
+      <div class="info-block">
+        <h2>Listener Log (Local)</h2>
+        <form class="note-form" onsubmit="addNote(event)">
+          <input type="text" class="note-input" id="note-input" maxlength="64" placeholder="Leave feedback or track request..." required />
+          <button type="submit" class="btn">Post</button>
+        </form>
+        <ul class="notes-feed" id="notes-feed"></ul>
+      </div>
+    </div>
   </div>
 
-  <footer>
-    MAIN: <a href="https://soundcloud.com" target="_blank">@SCHWZR.WAV</a> //
-    ARCHIVE: <a href="https://soundcloud.com" target="_blank">@SCHWZR</a> //
-    ALL AUDIO FREE TO DL // ZÜRI +41
-  </footer>
+  <!-- Persistent Studio Player -->
+  <div class="player-dock">
+    <div class="player-inner">
+      <div class="player-controls">
+        <button class="btn" onclick="prevTrack()" title="Previous">&larr;</button>
+        <button class="btn" id="dock-play-btn" onclick="togglePlay()">Play</button>
+        <button class="btn" onclick="nextTrack()" title="Next">&rarr;</button>
+      </div>
+
+      <div class="player-track-info">
+        <div class="player-title" id="dock-title">01 — nebel_ueber_em_see_dub.wav</div>
+        <div class="player-meta" id="dock-meta">122 BPM · Am · Studio Bounce</div>
+      </div>
+
+      <div class="waveform-wrapper" id="waveform" onclick="seekWaveform(event)"></div>
+
+      <div class="player-time" id="dock-time">00:00 / 03:00</div>
+    </div>
+  </div>
 
   <script>
-    // Lägg in dina riktiga ljudfiler i GitHub-mappen och skriv filnamnet under file: "din_lat.mp3"
-    const tracks = [
-      { id: "01", name: "01_nebel_ueber_em_see_dub.wav", bpm: "122", note: "RAW DUB", freq: 55, file: "" },
-      { id: "02", name: "02_chreis4_afterhours_tool.wav", bpm: "124", note: "CLUB TOOL", freq: 49, file: "" },
-      { id: "03", name: "03_reine_schrott_v4_unmastered.wav", bpm: "121", note: "UNMASTERED", freq: 61.7, file: "" },
-      { id: "04", name: "04_limmat_sub_sketch_03am.wav", bpm: "123", note: "03AM SKETCH", freq: 46.2, file: "" },
-      { id: "05", name: "05_noed_fertig_edit_909.wav", bpm: "125", note: "EDIT BPM", freq: 58.3, file: "" }
+    // Lägg upp dina ljudfiler i samma mapp på GitHub och skriv filnamnet under file: "din_lat.mp3"
+    const catalog = [
+      {
+        cat: "SCHW-001",
+        title: "nebel_ueber_em_see_dub.wav",
+        desc: "Rolling low-end dub, recorded live off hardware",
+        bpm: "122",
+        key: "Am",
+        format: "WAV · 48.2 MB",
+        freq: 55,
+        file: ""
+      },
+      {
+        cat: "SCHW-002",
+        title: "chreis4_afterhours_tool.wav",
+        desc: "Stripped percussion & sub pressure for late sets",
+        bpm: "124",
+        key: "Fm",
+        format: "WAV · 39.7 MB",
+        freq: 43.65,
+        file: ""
+      },
+      {
+        cat: "SCHW-003",
+        title: "reine_schrott_v4_unmastered.wav",
+        desc: "Raw tape saturation test, unmastered bounce",
+        bpm: "121",
+        key: "Gm",
+        format: "WAV · 52.1 MB",
+        freq: 49,
+        file: ""
+      },
+      {
+        cat: "SCHW-004",
+        title: "limmat_sub_sketch_03am.wav",
+        desc: "Minimal chord stab & deep sub arrangement",
+        bpm: "123",
+        key: "Cm",
+        format: "WAV · 31.4 MB",
+        freq: 65.4,
+        file: ""
+      },
+      {
+        cat: "SCHW-005",
+        title: "noed_fertig_edit_909.wav",
+        desc: "909 rimshot groove & filtered synth loop",
+        bpm: "125",
+        key: "Dm",
+        format: "WAV · 44.0 MB",
+        freq: 73.4,
+        file: ""
+      }
     ];
+
+    // Genererar en realistisk vågformsprofil (64 staplar)
+    const barHeights = Array.from({ length: 64 }, (_, i) => {
+      const wave = Math.sin(i * 0.28) * 28 + Math.cos(i * 0.7) * 22 + 45;
+      return Math.max(18, Math.min(100, Math.round(wave)));
+    });
 
     let currentIndex = 0;
     let isPlaying = false;
     let audio = new Audio();
     let synthInterval = null;
     let audioCtx = null;
-    let fakeProgress = 0;
+    let progressPct = 0;
 
-    function renderShelf() {
-      const shelf = document.getElementById("tape-shelf");
-      shelf.innerHTML = "";
-      tracks.forEach((t, idx) => {
-        const isCurrent = idx === currentIndex;
-        const slot = document.createElement("div");
-        slot.className = "mini-tape-slot" + (isCurrent ? " active-slot" : "");
-        slot.innerHTML = `
-          <div class="mini-cassette" onclick="selectAndPlay(${idx})">
-            <div class="mini-label">${t.name}</div>
-            <div class="mini-meta">
-              <span>${t.bpm} BPM</span>
-              <span>${t.note}</span>
-            </div>
-          </div>
-          <div class="slot-controls">
-            <button class="slot-btn" onclick="selectAndPlay(${idx})">${isCurrent && isPlaying ? "STOP" : "PLAY"}</button>
-            <a class="slot-btn" href="${t.file || '#'}" onclick="downloadTrack(event, ${idx})">DL</a>
-          </div>
-        `;
-        shelf.appendChild(slot);
+    function initWaveform() {
+      const container = document.getElementById("waveform");
+      container.innerHTML = "";
+      barHeights.forEach((h) => {
+        const bar = document.createElement("div");
+        bar.className = "wave-bar";
+        bar.style.height = h + "%";
+        container.appendChild(bar);
       });
     }
 
-    function updateDeckUI() {
-      const t = tracks[currentIndex];
-      document.getElementById("active-label").textContent = t.name;
-      document.getElementById("deck-bpm").textContent = `${t.bpm} BPM // CH-ZÜRI`;
-      document.getElementById("wave-title").textContent = `TRACK ${t.id}`;
-      document.getElementById("deck-status").textContent = isPlaying ? "PLAYING..." : "STOPPED";
+    function updateWaveformVisual(pct) {
+      const bars = document.querySelectorAll(".wave-bar");
+      const activeCount = Math.floor((pct / 100) * bars.length);
+      bars.forEach((bar, idx) => {
+        if (idx <= activeCount && (isPlaying || pct > 0)) {
+          bar.classList.add("played");
+        } else {
+          bar.classList.remove("played");
+        }
+      });
+    }
 
-      const well = document.getElementById("tape-well");
-      const playBtn = document.getElementById("play-btn");
-      if (isPlaying) {
-        well.classList.add("spinning");
-        playBtn.classList.add("playing-btn");
-        playBtn.innerHTML = "&#9646;&#9646; PAUSE";
-      } else {
-        well.classList.remove("spinning");
-        playBtn.classList.remove("playing-btn");
-        playBtn.innerHTML = "&#9654; PLAY";
-      }
-      renderShelf();
+    function renderCatalog() {
+      const tbody = document.getElementById("catalog-body");
+      tbody.innerHTML = "";
+      catalog.forEach((item, idx) => {
+        const active = idx === currentIndex && isPlaying;
+        const tr = document.createElement("tr");
+        tr.className = "track-row" + (active ? " playing" : "");
+        tr.innerHTML = `
+          <td class="cat-id hide-sm">${item.cat}</td>
+          <td>
+            <span class="track-title" onclick="selectTrack(${idx})">${item.title}</span>
+            <span class="track-sub">${item.desc}</span>
+          </td>
+          <td class="mono-cell hide-sm">${item.bpm}</td>
+          <td class="mono-cell hide-sm">${item.key}</td>
+          <td class="mono-cell hide-sm">${item.format}</td>
+          <td>
+            <div class="row-actions">
+              <button class="btn ${active ? 'is-active' : ''}" onclick="selectTrack(${idx})">
+                ${active ? 'Pause' : 'Play'}
+              </button>
+              <a class="btn" href="${item.file || '#'}" onclick="handleDownload(event, ${idx})">DL</a>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function updateDock() {
+      const item = catalog[currentIndex];
+      document.getElementById("dock-title").textContent = `${item.cat} — ${item.title}`;
+      document.getElementById("dock-meta").textContent = `${item.bpm} BPM · ${item.key} · ${item.format}`;
+      const playBtn = document.getElementById("dock-play-btn");
+      playBtn.textContent = isPlaying ? "Pause" : "Play";
+      playBtn.classList.toggle("is-active", isPlaying);
+      renderCatalog();
     }
 
     function stopSynth() {
@@ -636,131 +640,149 @@
       }
     }
 
-    function startSynth(track) {
+    // Realistisk minimalistisk dub-techno-preview när ingen ljudfil är uppladdad ännu
+    function startSynthPreview(item) {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       if (audioCtx.state === "suspended") audioCtx.resume();
 
-      const stepMs = (60 / parseInt(track.bpm, 10) / 4) * 1000;
+      const stepMs = (60 / parseInt(item.bpm, 10) / 4) * 1000;
       let step = 0;
 
       synthInterval = setInterval(() => {
         const now = audioCtx.currentTime;
+
+        // Djup 4/4 kick
         if (step % 4 === 0) {
           const osc = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
           osc.type = "sine";
-          osc.frequency.setValueAtTime(110, now);
-          osc.frequency.exponentialRampToValueAtTime(38, now + 0.14);
-          gain.gain.setValueAtTime(0.45, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+          osc.frequency.setValueAtTime(105, now);
+          osc.frequency.exponentialRampToValueAtTime(36, now + 0.15);
+          gain.gain.setValueAtTime(0.4, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
           osc.connect(gain);
           gain.connect(audioCtx.destination);
           osc.start(now);
-          osc.stop(now + 0.29);
+          osc.stop(now + 0.31);
         }
+
+        // Sub-bas
         if (step % 4 === 2 || step % 16 === 15) {
           const sub = audioCtx.createOscillator();
           const subGain = audioCtx.createGain();
           sub.type = "triangle";
-          sub.frequency.setValueAtTime(track.freq, now);
-          subGain.gain.setValueAtTime(0.22, now);
+          sub.frequency.setValueAtTime(item.freq, now);
+          subGain.gain.setValueAtTime(0.18, now);
           subGain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
           sub.connect(subGain);
           subGain.connect(audioCtx.destination);
           sub.start(now);
           sub.stop(now + 0.23);
         }
+
+        // Diskret hi-hat på offbeat
+        if (step % 4 === 2) {
+          const bufferSize = audioCtx.sampleRate * 0.04;
+          const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+          const data = buffer.getChannelData(0);
+          for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+          const noise = audioCtx.createBufferSource();
+          noise.buffer = buffer;
+          const filter = audioCtx.createBiquadFilter();
+          filter.type = "highpass";
+          filter.frequency.value = 7000;
+          const nGain = audioCtx.createGain();
+          nGain.gain.setValueAtTime(0.05, now);
+          nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+          noise.connect(filter);
+          filter.connect(nGain);
+          nGain.connect(audioCtx.destination);
+          noise.start(now);
+        }
+
         step++;
-        fakeProgress = (fakeProgress + 0.5) % 100;
-        const sec = Math.floor((fakeProgress / 100) * 180);
-        document.getElementById("wave-fill").style.width = fakeProgress + "%";
-        document.getElementById("counter").textContent = formatTime(sec);
-        document.getElementById("wave-time").textContent = `${formatTime(sec)} / 03:00`;
+        progressPct = (progressPct + 0.4) % 100;
+        const sec = Math.floor((progressPct / 100) * 180);
+        document.getElementById("dock-time").textContent = `${formatTime(sec)} / 03:00`;
+        updateWaveformVisual(progressPct);
       }, stepMs);
     }
 
-    function selectAndPlay(idx) {
+    function selectTrack(idx) {
       if (currentIndex === idx && isPlaying) {
-        stopTrack();
+        pauseAll();
         return;
       }
-      stopTrack();
+      pauseAll();
       currentIndex = idx;
       isPlaying = true;
-      const t = tracks[currentIndex];
-      if (t.file) {
-        audio.src = t.file;
+      const item = catalog[currentIndex];
+      if (item.file) {
+        audio.src = item.file;
         audio.play();
       } else {
-        startSynth(t);
+        startSynthPreview(item);
       }
-      updateDeckUI();
+      updateDock();
     }
 
     function togglePlay() {
       if (isPlaying) {
-        isPlaying = false;
-        audio.pause();
-        stopSynth();
-        updateDeckUI();
+        pauseAll();
       } else {
-        selectAndPlay(currentIndex);
+        selectTrack(currentIndex);
       }
     }
 
-    function stopTrack() {
+    function pauseAll() {
       isPlaying = false;
       audio.pause();
-      audio.currentTime = 0;
       stopSynth();
-      fakeProgress = 0;
-      document.getElementById("wave-fill").style.width = "0%";
-      document.getElementById("counter").textContent = "00:00";
-      document.getElementById("wave-time").textContent = "00:00 / 03:00";
-      updateDeckUI();
+      updateDock();
     }
 
     function nextTrack() {
-      const next = (currentIndex + 1) % tracks.length;
-      selectAndPlay(next);
+      progressPct = 0;
+      selectTrack((currentIndex + 1) % catalog.length);
     }
 
     function prevTrack() {
-      const prev = (currentIndex - 1 + tracks.length) % tracks.length;
-      selectAndPlay(prev);
+      progressPct = 0;
+      selectTrack((currentIndex - 1 + catalog.length) % catalog.length);
     }
 
     function playRandom() {
-      const rand = Math.floor(Math.random() * tracks.length);
-      selectAndPlay(rand);
+      progressPct = 0;
+      const rand = Math.floor(Math.random() * catalog.length);
+      selectTrack(rand);
     }
 
-    function downloadTrack(e, idx) {
-      const t = tracks[idx];
-      if (!t.file) {
+    function handleDownload(e, idx) {
+      const item = catalog[idx];
+      if (!item.file) {
         e.preventDefault();
-        alert("Ladda upp din riktiga .mp3/.wav-fil i GitHub-mappen och skriv in filnamnet i koden för nedladdning.");
+        alert(`Upload "${item.title}" to your GitHub repository and add its filename in index.html to enable direct WAV download.`);
       }
-    }
-
-    function downloadCurrent(e) {
-      downloadTrack(e, currentIndex);
     }
 
     audio.addEventListener("timeupdate", () => {
       if (audio.duration) {
-        const pct = (audio.currentTime / audio.duration) * 100;
-        document.getElementById("wave-fill").style.width = pct + "%";
-        document.getElementById("counter").textContent = formatTime(audio.currentTime);
-        document.getElementById("wave-time").textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+        progressPct = (audio.currentTime / audio.duration) * 100;
+        document.getElementById("dock-time").textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+        updateWaveformVisual(progressPct);
       }
     });
 
-    function seek(e) {
-      if (!audio.duration) return;
+    audio.addEventListener("ended", nextTrack);
+
+    function seekWaveform(e) {
       const rect = e.currentTarget.getBoundingClientRect();
-      const pct = (e.clientX - rect.left) / rect.width;
-      audio.currentTime = pct * audio.duration;
+      const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+      progressPct = pct * 100;
+      if (audio.duration) {
+        audio.currentTime = pct * audio.duration;
+      }
+      updateWaveformVisual(progressPct);
     }
 
     function formatTime(sec) {
@@ -769,20 +791,40 @@
       return `${m}:${s}`;
     }
 
-    function addComment(e) {
+    // Lokal gästbok som sparas i webbläsaren
+    const defaultNotes = [
+      { date: "19.11", text: "tüüf & sacht, genau richtig für chreis 4" },
+      { date: "14.11", text: "played SCHW-002 in the warm-up set, clean sub" }
+    ];
+
+    function loadNotes() {
+      const saved = JSON.parse(localStorage.getItem("schwzr_notes") || "null") || defaultNotes;
+      const feed = document.getElementById("notes-feed");
+      feed.innerHTML = "";
+      saved.forEach((n) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="note-date">${n.date}</span><span>${n.text.replace(/</g, "&lt;")}</span>`;
+        feed.appendChild(li);
+      });
+    }
+
+    function addNote(e) {
       e.preventDefault();
-      const input = document.getElementById("gb-input");
+      const input = document.getElementById("note-input");
       const val = input.value.trim();
       if (!val) return;
       const now = new Date();
-      const time = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}`;
-      const li = document.createElement("li");
-      li.innerHTML = `<span class="gb-time">${time} &rarr;</span> ${val.replace(/</g, "&lt;")}`;
-      document.getElementById("gb-list").prepend(li);
+      const dateStr = `${String(now.getDate()).padStart(2, "0")}.${String(now.getMonth() + 1).padStart(2, "0")}`;
+      const saved = JSON.parse(localStorage.getItem("schwzr_notes") || "null") || [...defaultNotes];
+      saved.unshift({ date: dateStr, text: val });
+      localStorage.setItem("schwzr_notes", JSON.stringify(saved.slice(0, 12)));
       input.value = "";
+      loadNotes();
     }
 
-    updateDeckUI();
+    initWaveform();
+    updateDock();
+    loadNotes();
   </script>
 </body>
 </html>
