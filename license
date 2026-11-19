@@ -1,82 +1,337 @@
-SCHWZR.WAV — AUDIO, STEMS & ARCHIVE LICENSE (v1.0)
-Copyright (c) 2026 schwzr.wav. All rights reserved.
+SCHWZR.WAV — MASTER AUDIO, STEMS & ARCHIVE LICENSE AGREEMENT (v2.0)
+Effective Date: November 19, 2026
+Copyright (c) 2026 schwzr/schwzr.wav. All rights reserved.
 
-This license governs all audio recordings, studio bounces, dubs, edits, loops, 
-stems, and accompanying metadata ("The Audio") hosted within the schwzr.wav 
-repository and web archive.
-
-1. GRANT OF LICENSE (DJ, CLUB & RADIO USE)
-Subject to the terms and conditions of this License, schwzr.wav hereby grants 
-you a worldwide, non-exclusive, royalty-free, revocable license to:
-  a) Download, copy, and store The Audio on personal storage media (USB drives, 
-     hard drives, DJ software libraries) for offline playback.
-  b) Perform, mix, and broadcast The Audio in live DJ sets, club venues, 
-     private events, FM/web radio broadcasts, and non-monetized online DJ 
-     mixes (e.g., SoundCloud, Mixcloud, Hearthis).
-  c) Create private, unreleased personal edits or mashups strictly for use 
-     within your own live DJ sets.
-
-2. ATTRIBUTION REQUIREMENT
-Whenever The Audio is included in a published tracklist, radio log, or online 
-mix description, proper artist credit must be given as:
-  "schwzr.wav - [Track Title]"
-
-3. STRICT PROHIBITIONS
-Unless explicit written permission is obtained from schwzr.wav, you may NOT:
-  a) Sell, rent, lease, sub-license, or commercially distribute The Audio, in 
-     whole or in part, on any digital or physical medium.
-  b) Upload, distribute, or monetize The Audio as standalone tracks on any 
-     commercial streaming or download platform (including, but not limited to, 
-     Spotify, Apple Music, Beatport, Bandcamp, Traxsource, or YouTube).
-  c) Register The Audio, or any derivative work containing samples from The 
-     Audio, with any audio fingerprinting or Content ID system (e.g., YouTube 
-     Content ID, Meta Rights Manager, Shazam).
-  d) Falsely claim authorship, production credit, or ownership of The Audio.
-
-4. WEBSITE & ARCHIVE INTERFACE
-The HTML, CSS, and JavaScript source code of the schwzr.wav web interface is 
-provided "AS IS", without warranty of any kind, express or implied.
-
-5. RESERVATION OF RIGHTS
-All rights not expressly granted herein are strictly reserved by schwzr.wav.
+BY ACCESSING THIS REPOSITORY, STREAMING, DOWNLOADING, STORING, OR PERFORMING 
+ANY AUDIO FILE FROM SCHWZR.WAV ("YOU" OR "LICENSEE"), YOU AGREE TO BE BOUND BY 
+THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT ("AGREEMENT"). IF YOU DO NOT 
+AGREE TO THESE TERMS, DO NOT DOWNLOAD OR USE THE AUDIO.
 
 ================================================================================
 
-SCHWZR.WAV — MUSIG- & ARCHIV-LIZÄNZ (v1.0 // ZÜRITÜÜTSCH)
-Copyright (c) 2026 schwzr.wav (Züri // +41). Alli Rächt vorbehalte.
+1. CONTRACTING PARTIES & ACCEPTANCE
+1.1 Licensor: This Agreement is entered into by and between schwzr/schwzr.wav, 
+    reachable at schwzr.wav@gmail.com ("Licensor"), and the individual or 
+    entity downloading, accessing, or using the Licensed Material ("Licensee").
+1.2 Electronic Acceptance: Clicking "DL", initiating a file transfer, cloning 
+    this repository, or playing any file hosted at schwzrwav.github.io/schwzr.wav 
+    constitutes binding electronic acceptance of this Agreement.
 
-Die Lizenz reglet d’Nutzig vo allne Audio-Ufnahme, Studio-Bounces, Dubs, 
-Edits, Loops und Stems ("D’Musig"), wo in dem Repository und im schwzr.wav 
-Web-Archiv abgleit sind.
+2. DEFINITIONS & LICENSED AUDIO
+2.1 "The Audio" means all sound recordings, master bounces, dub mixes, edits, 
+    drum loops, stems, and accompanying metadata hosted in the official 
+    schwzr.wav catalog (Catalog Series SCHW-001 through SCHW-999).
+2.2 Reproduction Formats: Licensee is permitted to store and reproduce The Audio 
+    in digital formats (WAV, AIFF, FLAC, MP3) on personal computers, external 
+    drives, USB media, and DJ hardware/software strictly for authorized uses.
+2.3 Territory & Term: Worldwide, commencing upon download and continuing 
+    indefinitely unless terminated pursuant to Section 4.
+2.4 No Sublicensing: This license is strictly personal to Licensee. Sublicensing, 
+    transferring, lending, or redistributing raw files to third parties is 
+    strictly prohibited.
 
-1. ERLAUBTI NUTZIG (GRATIS FÜR DJs, CLUBS & RADIO)
-Du darfsch D’Musig gratis und ohni Gebühre:
-  a) Abelade, uf dine eigene Dateträger (USB-Stick, Festplatte, DJ-Library) 
-     speichere und offline abspiele.
-  b) In Live-DJ-Sets, im Club, a private Parties, im Radio und in nöd-
-     monetarisierte Online-Mixes (z.B. SoundCloud, Mixcloud) spiele und mixe.
-  c) Für dini eigene Live-Sets privat umschriibe, loope oder als DJ-Tool 
-     iibaue (solang die Edits nöd öffentlich verteilt werded).
+3. GRANT OF LICENSE & PERMITTED COMMERCIAL CONTEXT
+3.1 Non-Exclusive Grant: Licensor grants Licensee a worldwide, non-exclusive, 
+    non-transferable, revocable, royalty-free license to perform and mix The 
+    Audio under the following conditions:
+  a) Live Club & Event Performance: Permitted at clubs, festivals, private 
+     events, and client gigs, including events where Licensee receives a DJ 
+     performance fee or the venue collects ticket/door revenue.
+  b) Radio & Broadcast: Permitted on terrestrial FM/DAB radio and non-paywalled 
+     internet radio broadcasts, including ad-supported radio programming.
+  c) Promotional & Online Mixes: Permitted in continuous, multi-track DJ mixes 
+     uploaded to SoundCloud, Mixcloud, Hearthis, and YouTube, provided such 
+     mixes are non-monetized by Licensee.
+3.2 Excluded Commercial Uses: Direct monetization of standalone tracks, sync 
+    licensing (film, TV, commercials, video games), and paid compilation 
+    inclusion require a separate written commercial agreement.
 
-2. NAMENSNÄNNIG (CREDIT)
-Wenn D’Musig inere Tracklist, imene Radio-Log oder inere Mix-Beschriibig 
-ufgführt wird, muess de Artist klar gnännt werde als:
-  "schwzr.wav - [Track-Titel]"
+4. TERM & TERMINATION
+4.1 Automatic Termination: This Agreement and all rights granted herein shall 
+    terminate automatically without prior notice if Licensee breaches any 
+    material provision of this Agreement (including unauthorized uploads or 
+    Content ID claims). For minor technical attribution errors, Licensor may 
+    grant a seven (7) day cure period upon written notice.
+4.2 Effect of Termination: Upon termination, Licensee must immediately cease all 
+    public performance, streaming, and use of The Audio, and permanently delete 
+    and destroy all copies of The Audio from all storage media within forty-eight 
+    (48) hours.
 
-3. WAS STRICT VERBOTE ISCH
-Ohni schriftlichi Zuestimmig vo schwzr.wav darfsch du D’Musig NICHT:
-  a) Verchaufe, vermiete, wiiterlizenziere oder kommerziell vertriibe.
-  b) Als eigenständigi Tracks uf kommerzielle Streaming- oder Download-
-     Plattformene ufelade (z.B. Spotify, Apple Music, Beatport, Bandcamp, 
-     YouTube oder SoundCloud).
-  c) Bi Content-ID- oder Fingerprinting-System (z.B. YouTube Content ID, 
-     Meta Rights Manager, Shazam) registriere oder für dich beanspruche.
-  d) Behaupte, dass du de Produzent oder Urheber vo dere Musig bisch.
+5. REMIXES, SAMPLES, STEMS & DERIVATIVES
+5.1 Permitted DJ Edits: Licensee may warp, loop, EQ, re-edit, or create mashups 
+    of The Audio strictly for private use within Licensee's own live DJ sets.
+5.2 Restrictions on Derivatives: Derivative works, remixes, or tracks sampling 
+    The Audio or its stems may NOT be shared publicly, distributed for free, 
+    released commercially, or uploaded to any digital platform without prior 
+    written clearance from Licensor.
 
-4. CODE & HAFTIGSUSSCHLUSS
-De HTML-, CSS- und JavaScript-Code vo dem Archiv wird "wie gseh" ("AS IS") 
-ohni jeglichi Garantie oder Haftig zur Verfüegig gstellt.
+6. ATTRIBUTION & METADATA REQUIREMENTS
+6.1 Mandatory Credit: Wherever a tracklist, cue sheet, or description is 
+    published (online mixes, radio logs, livestream descriptions), Licensee 
+    must credit Licensor in the minimum format:
+      "schwzr.wav - [Track Title] ([Catalog ID])"
+6.2 Links & Metadata: When sharing online, Licensee should link to 
+    https://schwzrwav.github.io/schwzr.wav or @schwzr.wav where technically 
+    feasible. Licensee shall not strip or alter embedded metadata, ISRC/ISWC 
+    codes, or catalog identifiers. For live club sets where no tracklist is 
+    published, written attribution is waived.
 
-5. VORBEHALT VO DE RÄCHT
-Alli Rächt, wo da nöd ausdrücklich erteilt werded, bliibed vollumfänglich 
-bi schwzr.wav.
+7. PLATFORM & DISTRIBUTION RULES
+7.1 Permitted Platforms: Continuous DJ mixes and live DJ set recordings 
+    containing The Audio may be streamed on SoundCloud, Mixcloud, YouTube, 
+    Twitch, and social media (Instagram, TikTok) solely as part of a mixed DJ 
+    performance.
+7.2 Prohibited Distribution: Licensee shall NEVER upload The Audio as standalone, 
+    unmixed tracks to Spotify, Apple Music, Beatport, Bandcamp, Traxsource, 
+    SoundCloud, YouTube, or any digital distributor/aggregator.
+
+8. RIGHTS WARRANTIES & DISCLAIMERS
+8.1 Limited Authority Warranty: Licensor warrants that it owns or controls the 
+    master rights to the original portions of The Audio created by Licensor and 
+    has authority to grant the DJ performance permissions herein.
+8.2 Unmastered & Third-Party Disclaimer: Certain studio sketches, bootleg 
+    edits, or white-label tools in the archive may contain uncleared third-party 
+    vocal snippets, synth samples, or unmastered audio levels. Licensor makes 
+    no warranty regarding third-party sample clearances on bootleg edits.
+
+9. THIRD-PARTY RIGHTS & ROYALTY RESPONSIBILITY
+9.1 Performing Rights & Venue Licenses: Venue owners, event promoters, and 
+    broadcasters remain solely responsible for obtaining standard public 
+    performance licenses (e.g., STIM, SUISA, GEMA, PRS, ASCAP/BMI) and paying 
+    applicable statutory royalties or neighboring rights fees.
+9.2 Clearance Risk: If Licensee uses a bootleg or edit containing third-party 
+    material in a broadcast or online stream, Licensee assumes full 
+    responsibility for any third-party claims or platform muting.
+
+10. CONTENT-ID & TAKEDOWN BEHAVIOR
+10.1 No Content ID Registration: Licensee is strictly prohibited from registering 
+     The Audio or any mix containing The Audio with YouTube Content ID, Meta 
+     Rights Manager, Shazam, or any automated fingerprinting system.
+10.2 Claims & Whitelisting: Licensor does not actively enroll archive dubs in 
+     automated Content ID blocking. However, if a third-party claim or automated 
+     takedown occurs on a legitimate DJ mix, Licensee may contact Licensor for 
+     written proof of permission or manual claim release where controlled by 
+     Licensor.
+
+11. NO EXCLUSIVITY & NO ENDORSEMENT
+11.1 Non-Exclusive: All rights granted are non-exclusive. Licensor retains full 
+     freedom to release, sign, remove, or license The Audio to any third party 
+     at any time.
+11.2 No Endorsement: Nothing in this Agreement implies any partnership, agency, 
+     or official endorsement by schwzr/schwzr.wav of Licensee, Licensee's events, 
+     or Licensee's brand.
+
+12. TRADEMARKS & IDENTITY
+12.1 Separate Permission Required: The name "schwzr.wav", "schwzr", associated 
+     visual marks, catalog branding, and artist identity remain the exclusive 
+     property of Licensor. Licensee may not use Licensor's name or branding in 
+     event flyers, merchandise, or promotional materials (other than accurate 
+     tracklist credits) without separate written consent.
+
+13. LIMITATION OF LIABILITY & INDEMNIFICATION
+13.1 Liability Cap: To the maximum extent permitted by law, Licensor shall not 
+     be liable for any indirect, incidental, or consequential damages (including 
+     equipment damage from unmastered audio peaks, lost gigs, or account strikes) 
+     arising from use of The Audio. Licensor's total aggregate liability shall 
+     not exceed ten euros (EUR 10.00).
+13.2 Indemnification: Licensee agrees to indemnify, defend, and hold harmless 
+     Licensor from any claims, damages, legal fees, or platform penalties 
+     resulting from Licensee's breach of this Agreement or misuse of The Audio.
+
+14. WARRANTY DISCLAIMER & GOVERNING LAW
+14.1 "AS IS" Provision: THE AUDIO AND WEBSITE CODE ARE PROVIDED "AS IS" AND 
+     "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, 
+     INCLUDING MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+14.2 Governing Law & Venue: This Agreement shall be governed by and construed 
+     in accordance with the substantive laws of Sweden, without regard to 
+     conflict-of-law principles. Any dispute arising out of this Agreement shall 
+     be subject to the exclusive jurisdiction of the courts of Stockholm, Sweden.
+
+15. ENTIRE AGREEMENT & SEVERABILITY
+15.1 Entire Agreement: This Agreement constitutes the entire understanding 
+     between the parties regarding The Audio and supersedes all prior oral or 
+     written statements. Amendments are valid only if published in writing by 
+     Licensor.
+15.2 Severability: If any provision of this Agreement is held invalid or 
+     unenforceable, the remaining provisions shall remain in full force and 
+     effect.
+
+16. NOTICES & WRITTEN PERMISSIONS
+All requests for commercial licensing, remix clearance, whitelisting, or legal 
+notices must be sent in writing to:
+  Entity: schwzr/schwzr.wav
+  Email:  schwzr.wav@gmail.com
+  Web:    https://schwzrwav.github.io/schwzr.wav
+Written permissions are valid only when issued via email from Licensor's 
+designated address or signed electronically by Licensor.
+
+================================================================================
+================================================================================
+
+SCHWZR.WAV — MASTER AUDIO, STEMS & ARCHIV-LIZÄNZVERTRAG (v2.0 // ZÜRITÜÜTSCH)
+Gültig ab: 19. November 2026
+Copyright (c) 2026 schwzr/schwzr.wav. Alli Rächt vorbehalte.
+
+MIT DEM ZUEGRIFF UF DAS REPOSITORY, DEM STREAME, ABELADE, SPEICHERE ODER 
+ABSPIELE VO IRGENDEINERE AUDIO-DATEI VO SCHWZR.WAV ("DU" ODER "LIZÄNZNÄHMER"), 
+ERKLEERSCH DU DICH MIT DE BEDINGIGE VO DEM LIZÄNZVERTRAG ("VERTRAG") 
+IIVERSTANDE. WENN DU NÖD IIVERSTANDE BISCH, LAD D’MUSIG NÖD ABE UND BRUCH SI NÖD.
+
+================================================================================
+
+1. VERTRAGSPARTEIE & ANNAHM
+1.1 Lizänzgäber: De Vertrag wird abgschlosse zwüsched schwzr/schwzr.wav, 
+    erreichbar unter schwzr.wav@gmail.com ("Lizänzgäber"), und de Person oder 
+    Organisation, wo s’lizänzierte Material abeladt, abrueft oder brucht 
+    ("Lizänznähmer").
+1.2 Elektronischs Iiverständnis: S’Klicke uf "DL", s’Starte vomene Download, 
+    s’Klone vo dem Repository oder s’Abspiele vo irgendere Datei uf 
+    schwzrwav.github.io/schwzr.wav gilt als verbindlichi elektronischi Annahm 
+    vo dem Vertrag.
+
+2. DEFINITIONE & LIZÄNZIERTI MUSIG
+2.1 "D’Musig" umfasst alli Tonufnahme, Master-Bounces, Dub-Mixes, Edits, 
+    Drum-Loops, Stems und d’dezueghörige Metadate im offizielle schwzr.wav-
+    Katalog (Katalog-Serie SCHW-001 bis SCHW-999).
+2.2 Reproduktionsformat: De Lizänznähmer darf D’Musig in digitale Format (WAV, 
+    AIFF, FLAC, MP3) uf eigene Computer, externe Festplatte, USB-Sticks und 
+    DJ-Hardware/Software für die erlaubte Zweck speichere und reproduziere.
+2.3 Gebiet & Duur: Wältwiit, ab em Ziitpunkt vom Download und uf unbestimmti 
+    Ziit, usser de Vertrag wird gmäss Abschnitt 4 beändet.
+2.4 Kei Unterlizänzierig: Die Lizänz isch strikt persönlich für de Lizänznähmer. 
+    Unterlizänzierig, Wiitergab, Usleihe oder s’Verteile vo de Rohdateie a 
+    Dritti isch strikt verbote.
+
+3. LIZÄNZERTEILIG & ERLAUBTE KOMMERZIELLE KONTEXT
+3.1 Nöd-exklusivi Erteilig: De Lizänzgäber erteilt em Lizänznähmer e wältwiiti, 
+    nöd-exklusivi, nöd-übertragbari, widerrufbari und lizänzgebührefräii Lizänz, 
+    D’Musig unter folgende Bedingige z’spiele und z’mixe:
+  a) Live-Club- & Event-Ufführige: Erlaubt in Clubs, a Festivals, private 
+     Events und Chunde-Gigs, au wenn de Lizänznähmer e DJ-Gage überchunt oder 
+     de Verastalter Iitritt/Ticket-Iinahme verlangt.
+  b) Radio & Rundfunk: Erlaubt im terrestrische FM/DAB-Radio und in nöd-
+     bezahlpflichtige Internetradio-Sändige, inklusive wärbefinanziertem Radio.
+  c) Promo- & Online-Mixes: Erlaubt in zämehängende DJ-Sets mit mehrere Tracks 
+     uf SoundCloud, Mixcloud, Hearthis und YouTube, solang die Mixes vom 
+     Lizänznähmer nöd monetarisiert werded.
+3.2 Usgschlosseni kommerzielli Nutzig: Direkti Monetarisierig vo einzelne 
+    Tracks, Sync-Lizänze (Film, TV, Wärbig, Games) und bezahlti Compilations 
+    bruched e separati schriftlichi Vereinbarig.
+
+4. VERTRAGSDUUR & BEÄNDIGUNG
+4.1 Automatischi Beändigung: De Vertrag und alli da erteilte Rächt änded 
+    automatisch und ohni Vorakündigung, wenn de Lizänznähmer gege e wesentliche 
+    Bestimmig verstosst (inklusive unerlaubti Uploads oder Content-ID-Claims). 
+    Bi chliine formale Fehler bi de Namensnännig chan de Lizänzgäber schriftlich 
+    e Nachbesserigsfrischt vo sibe (7) Täg igwähre.
+4.2 Folge vo de Beändigung: Nach de Beändigung muess de Lizänznähmer jedi 
+    öffentligi Ufführig, s’Streame und d’Nutzig vo D’Musig sofort iistelle und 
+    alli Kopie vo D’Musig innerhalb vo achtundvierzig (48) Stund vo allne 
+    Dateträger duerhaft lösche.
+
+5. REMIXES, SAMPLES, STEMS & BEARBEITIGE
+5.1 Erlaubti DJ-Edits: De Lizänznähmer darf D’Musig warpe, loope, EQue, 
+    um-editiere oder Mashups erstelle – aber nur für de privat Gebruch in 
+    sine eigene Live-DJ-Sets.
+5.2 Iischränkige bi Bearbeitige: Remixes, Bearbeitige oder Tracks, wo D’Musig 
+    oder Stems samplet, dörfed ohni vorherigi schriftlichi Genehmigung vom 
+    Lizänzgäber NÖD öffentlich teilt, gratis verteilt, kommerziell veröffentlicht 
+    oder uf digitale Plattformene ufelade werde.
+
+6. NAMENSNÄNNIG & METADATE
+6.1 Pflicht-Credit: Überall det, wo e Tracklist, es Cue-Sheet oder e Beschriibig 
+    veröffentlicht wird (Online-Mixes, Radio-Logs, Livestream-Beschriibige), 
+    muess de Lizänzgäber mindestens so gnännt werde:
+      "schwzr.wav - [Track-Titel] ([Katalog-ID])"
+6.2 Links & Metadate: Bim Online-Teile söll, wo technisch möglich, uf 
+    https://schwzrwav.github.io/schwzr.wav oder @schwzr.wav verlinkt werde. 
+    Iibetteti Metadate, ISRC/ISWC-Codes oder Katalog-Nummere dörfed nöd 
+    entfärnt werde. Bi Live-Club-Sets ohni veröffentlichti Tracklist entfällt 
+    d’schriftlichi Namensnännig.
+
+7. PLATTFORM- & VERTRIEBSREGLE
+7.1 Erlaubti Plattformene: Zämehängendi DJ-Mixes und Live-DJ-Set-Ufnahme mit 
+    D’Musig dörfed uf SoundCloud, Mixcloud, YouTube, Twitch und Social Media 
+    (Instagram, TikTok) als Teil vomene gmixte DJ-Set gstreamt werde.
+7.2 Verbote im Vertrieb: De Lizänznähmer darf D’Musig NIEMALS als eigenständigi, 
+    ungmixti Tracks uf Spotify, Apple Music, Beatport, Bandcamp, Traxsource, 
+    SoundCloud, YouTube oder über en digitale Distributor/Aggregator ufelade.
+
+8. RÄCHTSGARANTIE & HAFTIGSUSSCHLUSS
+8.1 Iigschränkti Garantie: De Lizänzgäber garantiert, dass er d’Master-Rächt a 
+    de vo ihm selbscht erschaffene Original-Teil vo D’Musig besitzt oder 
+    kontrolliert und berechtigt isch, die DJ-Ufführigsrächt z’erteile.
+8.2 Unmastered- & Drittparteie-Hinweis: Gwüssi Studio-Skizze, Bootleg-Edits 
+    oder White-Label-Tools im Archiv chönd nöd-klärti Vocal-Schnipsel, Synth-
+    Samples vo Dritte oder ungmischti Luutstärche enthalte. De Lizänzgäber 
+    übernimmt kei Garantie für d’Sample-Clearance vo Drittmaterial bi Bootlegs.
+
+9. RÄCHT VO DRITTE & TANTIEME-VERANTWORTIG
+9.1 Ufführigsrächt & Club-Lizänze: Clubbsitzer, Event-Verastalter und 
+    Sänder sind allei defür verantwortlich, die übliche öffentliche 
+    Ufführigslizänze (z.B. STIM, SUISA, GEMA, PRS, ASCAP/BMI) iizhole und 
+    gsetzlichi Tantieme oder Leistungsschutzgebühre z’zahle.
+9.2 Clearance-Risiko: Wenn de Lizänznähmer es Bootleg oder en Edit mit 
+    Drittmaterial imene Radio-Sänder oder Online-Stream brucht, treit er s’volle 
+    Risiko für allfälligi Asprüch vo Dritte oder Plattform-Stummschaltige.
+
+10. CONTENT-ID & TAKEDOWN-VERHALTE
+10.1 Kei Content-ID-Registrierig: Es isch em Lizänznähmer strikt verbote, 
+     D’Musig oder en Mix mit D’Musig bi YouTube Content ID, Meta Rights 
+     Manager, Shazam oder emene andere Fingerprinting-System z’registriere.
+10.2 Claims & Whitelisting: De Lizänzgäber mäldet Archiv-Dubs nöd aktiv für 
+     automatischi Content-ID-Sperrige a. Falls bi emene legitime DJ-Mix 
+     trotzdem e Claim oder e Sperrig passiert, chan de Lizänznähmer de 
+     Lizänzgäber für e schriftlichi Erlaubnis oder e manuelli Freigab 
+     kontaktiere, sofern de Lizänzgäber d’Kontrolle drüber hät.
+
+11. KEI EXKLUSIVITÄT & KEI EMPFEHLIG
+11.1 Nöd-Exklusivität: Alli erteilte Rächt sind nöd-exklusiv. De Lizänzgäber 
+     b’haltet d’volli Freiheit, D’Musig jederziit z’veröffentliche, z’signe, 
+     z’entfärne oder a Dritti z’lizänziere.
+11.2 Kei Empfehlig (Endorsement): Nüt i dem Vertrag begründet e Partnerschaft, 
+     Agentur oder e offizielli Empfehlig vo schwzr/schwzr.wav für de 
+     Lizänznähmer, sini Events oder sini Marke.
+
+12. MARKE & IDENTITÄT
+12.1 Separati Erlaubnis nötig: De Name "schwzr.wav", "schwzr", dezueghörigi 
+     Logos, s’Katalog-Branding und d’Künstler-Identität bliibed s’alleinige 
+     Eigetum vom Lizänzgäber. Ohni separati schriftlichi Zuestimmig darf de 
+     Lizänznähmer de Name oder s’Branding nöd uf Flyer, Merch oder Werbematerial 
+     bruche (usgnoh korräkti Tracklist-Credits).
+
+13. HAFTIGSBESCHRÄNKIG & SCHADLOSHALTIG
+13.1 Haftigsobergrenze: Im maximal gsetzlich zulässige Umfang haftet de 
+     Lizänzgäber nöd für indirekti, zuefälligi oder Folgeschäde (inklusive 
+     Schäde a Equipment dur ungmischti Audio-Peaks, entgangeni Gigs oder 
+     Account-Strikes), wo dur d’Nutzig vo D’Musig entstönd. D’Gsamthaftig vom 
+     Lizänzgäber isch uf zäh Euro (EUR 10.00) beschränkt.
+13.2 Schadloshaltig: De Lizänznähmer verpflichtet sich, de Lizänzgäber vo 
+     allne Asprüch, Schäde, Awaltschöschte oder Plattform-Strafe freizstelle, 
+     wo dur e Verletzig vo dem Vertrag oder Missbruch vo D’Musig entstönd.
+
+14. GWÄHRLEISTIGSUSSCHLUSS & AWÄNDBARS RÄCHT
+14.1 "WIE GSEH" ("AS IS"): D’MUSIG UND DE WEBSITE-CODE WERDED "WIE GSEH" ("AS 
+     IS") UND "WIE VERFÜEGBAR" OHNI JEGLICHI USDRÜCKLICHI ODER STILLSCHWIIGENDI 
+     GWÄHRLEISTIG ZUR VERFÜEGIG GSTELLT.
+14.2 Awändbars Rächt & Grichtsstand: De Vertrag unterstaht em materielle Rächt 
+     vo Schwede (Sweden), unter Usschluss vom Kollisionsrächt. Für alli 
+     Striitigkeite us dem Vertrag sind usschliesslich d’Gricht in Stockholm, 
+     Schwede (Stockholm, Sweden) zueständig.
+
+15. GSAMTVERTRAG & SALVATORISCHI KLAUSEL
+15.1 Gsamtvertrag: De Vertrag stellt di gsamti Vereinbarig zwüsched de Parteie 
+     in Bezug uf D’Musig dar und ersetzt alli früehere mündliche oder 
+     schriftliche Abmachige. Änderige sind nur gültig, wenn si vom Lizänzgäber 
+     schriftlich veröffentlicht werded.
+15.2 Salvatorischi Klausel: Sött e Bestimmig vo dem Vertrag unwirksam oder 
+     nöd duresetzbar sii, bliibed die übrige Bestimmige vollumfänglich in Chraft.
+
+16. MITTEILIGE & SCHRIFTLICHI ERLAUBNIS
+Alli Afraage für kommerzielli Lizänze, Remix-Freigabe, Whitelisting oder 
+rächtlichi Mitteilige müend schriftlich gschickt werde a:
+  Entity: schwzr/schwzr.wav
+  Email:  schwzr.wav@gmail.com
+  Web:    https://schwzrwav.github.io/schwzr.wav
+Schriftlichi Erlaubnis sind nur gültig, wenn si per E-Mail vo de agäbene 
+Adresse vom Lizänzgäber verschickt oder elektronisch unterschribe worde sind.
